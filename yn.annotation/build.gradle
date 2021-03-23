@@ -1,0 +1,40 @@
+apply plugin: 'java-library'
+//apply plugin: 'maven'
+//apply plugin: 'com.novoda.bintray-release'
+
+//apply plugin: 'com.github.panpf.bintray-publish'
+
+//apply plugin: 'com.github.dcendents.android-maven'
+//group='com.github.wengliuhu'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
+
+//uploadArchives{
+//    repositories.mavenDeployer{
+//        // 配置本地仓库路径，项目根目录下的repository目录中
+//        repository(url: uri('../repository'))
+//        pom.groupId = "com.yanantec.annotation"// 唯一标识（通常为模块包名，也可以任意）
+//        pom.artifactId = "annotation" // 项目名称（通常为类库模块名称，也可以任意）
+//        pom.version = "1.0.0" // 版本号
+//    }
+//}
+
+
+//publish {
+//    repoName = "maven"
+//    userOrg = 'yn'      //bintray注册的用户名
+//    groupId = 'com.yanantec'         //compile引用时的第1部分groupId
+//    artifactId = 'annotation'     //compile引用时的第2部分项目名
+//    publishVersion = '1.4.0'    //compile引用时的第3部分版本号
+//    desc = '增加有序map'
+//    website = 'https://github.com/wengliuhu/YnArc'
+//}
+
+
+//        gradle clean build bintrayUpload -PbintrayUser=wengliuhu -PbintrayKey=53b49eecba33e71d1848fb62fc2fdaad0c85dfe7 -PdryRun=false
